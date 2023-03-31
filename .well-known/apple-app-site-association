@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "<TeamId>.ch.dogli.app",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
