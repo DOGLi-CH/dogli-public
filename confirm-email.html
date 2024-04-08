@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>DOGLi</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main class="container">
+		<img src="/images/logo-foreground.png" alt="DOGLi Logo" />
+		<h1>E-Mail Adresse bestätigen</h1>
+		<p>
+			Um deine E-Mail Adresse zu bestätigen, <strong>öffne die DOGLi App</strong> und gib den nachfolgenden Code ein:
+		</p>
+		<h2 id="confirmCode" style="text-align: center; margin-top: 2rem;"></h2>
+	</main>
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		document.getElementById("confirmCode").innerText = params.get('confirmCode');
+	</script>
+</body>
+
+</html>
